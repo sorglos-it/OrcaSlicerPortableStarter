@@ -19,15 +19,15 @@ By default, OrcaSlicer stores its configuration in the Windows user profile (`%A
 ## Installation
 
 1. Download and unzip OrcaSlicer: [OrcaSlicer Releases](https://github.com/SoftFever/OrcaSlicer/releases)
-2. Download `OrcaSlicerPortable.exe` from the [Releases](../../releases) page of this repository
-3. Copy `OrcaSlicerPortable.exe` into your OrcaSlicer folder (next to the original `orca-slicer.exe`)
-4. Run `OrcaSlicerPortable.exe`
+2. Download `OrcaSlicerPortableStarter.exe` from the [Releases](../../releases) page of this repository
+3. Copy `OrcaSlicerPortableStarter.exe` into your OrcaSlicer folder (next to the original `orca-slicer.exe`)
+4. Run `OrcaSlicerPortableStarter.exe`
 
 That's it — a `profile` folder is created on first start and holds all your settings from then on.
 
 ## Updating OrcaSlicer
 
-Unzip the new OrcaSlicer version, copy `OrcaSlicerPortable.exe` into the new folder and move your existing `profile` folder next to it. All your settings are preserved.
+Unzip the new OrcaSlicer version, copy `OrcaSlicerPortableStarter.exe` into the new folder and move your existing `profile` folder next to it. All your settings are preserved.
 
 ## How it works
 
@@ -40,6 +40,11 @@ orca-slicer.exe --datadir profile
 ## Building from source
 
 The project is a minimal C# console application (.NET Framework 4.7.2). Open `OrcaSlicerPortable.sln` in Visual Studio and build — no external dependencies.
+
+> The build output is named `OrcaSlicerPortable.exe`, while the file on the
+> [Releases](../../releases) page is named `OrcaSlicerPortableStarter.exe`.
+> It is the same program — the name works either way, since the launcher is
+> located by you, not by OrcaSlicer.
 
 ## Support / Donate
 
